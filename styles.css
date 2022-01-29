@@ -14,10 +14,37 @@
  * limitations under the License.
  */
 
+ * {font-family: 'SUIT Variable', sans-serif !important;}
 html, body {
-  font-family: 'Roboto', 'Helvetica', sans-serif;
   margin: 0;
   padding: 0;
+}
+.container {
+  max-width: 500px !important;
+  position: relative;
+  margin: 0px auto;
+}
+.datetime {
+  position: relative;
+  float: right;
+}
+.logo {
+  width: 70%;
+  margin: 0 auto;
+}
+.mdc-chip {
+  background-color: #fff !important;
+  border-radius: 12px;
+  height: 25px;
+  padding: 0 10px;
+  color: #62665d;
+  border: 1px solid #94978d;
+}
+.mdc-chip:hover{
+  color: #62665d;
+}
+.mdc-chip--selected {
+  background-color: #d9e7cb !important;
 }
 .mdl-demo .mdl-layout__header-row {
   padding-left: 40px;
@@ -196,7 +223,9 @@ html, body {
   margin: 0 -8px -8px -8px;
 }
 .mdl-demo section.section--center .section__text:not(:last-child) {
-  border-bottom: 1px solid rgba(0,0,0,.13);
+  border-bottom: 1px solid #fff;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
 }
 .mdl-demo .mdl-card .mdl-card__supporting-text > h3:first-child {
   margin-bottom: 24px;
@@ -235,4 +264,13 @@ html, body {
 }
 .mdl-demo .mdl-menu__container {
   z-index: 99;
+}
+#view-source {
+  position: fixed;
+  display: block;
+  right: 0;
+  bottom: 0;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  z-index: 900;
 }

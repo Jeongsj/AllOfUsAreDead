@@ -1,14 +1,175 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
+<html lang="en">
   <head>
-    <title>지우학 채팅 아카이브</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
-    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
-  </head>
-  <body class="mdc-typography">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>지우학 시사회 아카이브</title>
+
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:site" content="지금 우리 학교는" />
+    <meta property="twitter:title" content="지금 우리 학교는" />
+    <meta property="twitter:description" content="지우학 시사회 코멘트 아카이브" />
+    <meta property="twitter:image" content="./images/dead.jfif" />
+    <meta property="twitter:url" content="https://jeongsj.github.io/AllOfUsAreDead/" />
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <link href="http://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_purple-pink.min.css">
     
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    
+  </head>
+
+  <body class="mdl-demo mdl-color--grey-100 mdl-base" style="color: #e6dddd !important;">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header container">
+      <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary" style="background-color: black !important;">
+        <div class="mdl-layout__header-row" style="margin: 20px auto;">
+          <img src="./images/logo.png" alt="지우학 시사회 아카이브" class="logo">
+          <br>시사회 코멘트
+        </div>
+      </header>
+      <main class="mdl-layout__content" id="#" style="background-color:rgb(26, 25, 25)">
+        <div class="mdl-layout__tab-panel is-active" id="overview">
+
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col" style="background-color: black;">
+              <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing" id="chats">
+                <h4 class="mdl-cell mdl-cell--12-col">Preview Comments</h4>
+
+                <!-- Button Chip -->
+                <div class="mdc-chip-set mdc-chip-set--filter">
+
+                  <div class="mdc-chip mdc-chip--selected">
+                    <div class="mdc-chip__checkmark" >
+                      <svg class="mdc-chip__checkmark-svg" viewBox="-2 -3 30 30">
+                        <path class="mdc-chip__checkmark-path" fill="none" stroke="black"
+                              d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+                      </svg>
+                    </div>
+                    <div class="mdc-chip__text">조이현</div>
+                  </div>
+
+                  <div class="mdc-chip mdc-chip--selected">
+                    <div class="mdc-chip__checkmark" >
+                      <svg class="mdc-chip__checkmark-svg" viewBox="-2 -3 30 30">
+                        <path class="mdc-chip__checkmark-path" fill="none" stroke="black"
+                              d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+                      </svg>
+                    </div>
+                    <div class="mdc-chip__text">박지후</div>
+                  </div>
+
+                  <div class="mdc-chip mdc-chip--selected">
+                    <div class="mdc-chip__checkmark" >
+                      <svg class="mdc-chip__checkmark-svg" viewBox="-2 -3 30 30">
+                        <path class="mdc-chip__checkmark-path" fill="none" stroke="black"
+                              d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+                      </svg>
+                    </div>
+                    <div class="mdc-chip__text">윤찬영</div>
+                  </div>
+
+                  <div class="mdc-chip mdc-chip--selected">
+                    <div class="mdc-chip__checkmark" >
+                      <svg class="mdc-chip__checkmark-svg" viewBox="-2 -3 30 30">
+                        <path class="mdc-chip__checkmark-path" fill="none" stroke="black"
+                              d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+                      </svg>
+                    </div>
+                    <div class="mdc-chip__text">로몬</div>
+                  </div>
+
+                  <div class="mdc-chip mdc-chip--selected">
+                    <div class="mdc-chip__checkmark" >
+                      <svg class="mdc-chip__checkmark-svg" viewBox="-2 -3 30 30">
+                        <path class="mdc-chip__checkmark-path" fill="none" stroke="black"
+                              d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+                      </svg>
+                    </div>
+                    <div class="mdc-chip__text">유인수</div>
+                  </div>
+
+                  <div class="mdc-chip mdc-chip--selected">
+                    <div class="mdc-chip__checkmark" >
+                      <svg class="mdc-chip__checkmark-svg" viewBox="-2 -3 30 30">
+                        <path class="mdc-chip__checkmark-path" fill="none" stroke="black"
+                              d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+                      </svg>
+                    </div>
+                    <div class="mdc-chip__text">이유미</div>
+                  </div>
+
+                  <div class="mdc-chip mdc-chip--selected">
+                    <div class="mdc-chip__checkmark" >
+                      <svg class="mdc-chip__checkmark-svg" viewBox="-2 -3 30 30">
+                        <path class="mdc-chip__checkmark-path" fill="none" stroke="black"
+                              d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+                      </svg>
+                    </div>
+                    <div class="mdc-chip__text">임재혁</div>
+                  </div>
+
+              </div>
+            </div>
+          </section>
+
+        </div>
+
+        <footer class="mdl-mega-footer">
+          <div class="mdl-mega-footer--bottom-section">
+            <div class="mdl-logo">
+              지금 우리 학교는
+            </div>
+            <ul class="mdl-mega-footer--link-list">
+              <li>박지후</li>
+              <li>윤찬영</li>
+              <li>조이현</li>
+              <li>로몬 </li>
+              <li>유인수 </li>
+              <li>이유미 </li>
+              <li>임재혁 </li>
+            </ul>
+          </div>
+        </footer>
+      </main>
+    </div>
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="aa.js"></script>
   </body>
 </html>
